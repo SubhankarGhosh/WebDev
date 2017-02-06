@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>With Style</title>
+		<style type="text/css">
+			.red{
+				color: red;
+			}
+			.orange{
+				color: orange;
+			}
+			.large{
+				font-size: 200%;
+			}
+			#green{
+				color: green;
+			}
+			.underline{
+				text-decoration: underline;
+			}
+			.first{
+				background: #76D7C4;
+				margin-top: 50px;
+				margin-bottom: 50px;
+				margin-left: 50px;
+				margin-right: 50px;
+			}
+			.second{
+				background: #3498DB;
+				position: relative;
+				left: 100px;
+				top: 100px;
+				width: 200px;
+				z-index: 2;
+				opacity: 0.7;
+			}
+			.third{
+				background: #F0B27A;
+				position: relative;
+				left: 200px;
+				top: -100px;
+				width: 200px;
+				z-index: 1;
+			}
+			.vid{
+				float: right;
+			}
+			.tab{
+				clear: both;
+				position: absolute;
+				left: 500px;
+			}
+			.fourth{
+				margin: 100px 80px 60px 40px; <!-- Top right bottom left -->
+			}
+		</style>
+	</head>
+	<body>
+		<div class="vid" align="center">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/DrDm7uO4Fu0" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<div class="first">
+			<h1 class="orange">CSS is cool!</h1>
+			<h3>A few facts about the world we live in:</h3>
+			<a href="https://en.wikipedia.org/wiki/Earth"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Earth_Eastern_Hemisphere.jpg/600px-Earth_Eastern_Hemisphere.jpg" width="500" align="center"></a>
+			<p class="red large">Earth is the third planet from the Sun and is the largest of the terrestrial planets. Unlike the other planets in the solar system that are named after classic deities the Earth&apos;s name comes from the Anglo-Saxon word erda which means ground or soil. The Earth was formed <span class="underline">approximately 4.54 billion years ago and is the only known planet to support life</span>.</p>
+		</div>
+		<hr>
+		<div class="second">
+			<ul><h3>About the earth:</h3>
+				<li><strong>Mass:</strong> 5,972,190,000,000,000 billion kg</li>
+				<li><strong>Diameter at equator:</strong> 12,756 km</li>
+				<li><strong>Satellites:</strong> <a href="http://space-facts.com/the-moon/">The Moon</a></li>
+			</ul>
+		</div>
+		<hr>
+		<div class="third">
+			<ol id="green"><h3>Top 3 earth facts:</h3>
+				<li>The Earth&apos;s rotation is gradually slowing.</li>
+				<li>A year isn't exactly 365 days, and the earth doesn't take 24 hours to rotate.</li>
+				<li>70% of the earth's surface is water, and only one third of its fresh water is unfrozen.</li>
+			</ol>
+		</div>
+		<hr>
+		<div class="tab">
+			<table>
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Radius</th>
+						<th>Average<br>Temperature</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Mars</td>
+						<td>3,390 km</td>
+						<td>-55 &deg;C</td>
+					</tr>
+					<tr>
+						<td>Venus</td>
+						<td>6,052 km</td>
+						<td>460 &deg;C</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr>
+		<div class="fourth"><img src="thanks.jpg"></div>
+		<hr>
+		<div class="fifth">
+			<p class="large">Want to know more?</p>
+			<form action="http://space-facts.com/earth" >
+				<input type="submit" value="Hit me!">
+			</form>
+		</div>
+	</body>
+</html>
